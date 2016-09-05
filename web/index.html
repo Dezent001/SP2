@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="JS.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Student Database</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <form id="studentForm" action="#" method="POST">
+                        Enter new Student <br>
+                        <input type="text" name="Name" placeholder="Name" style="height: 25px; width: 200px"> <br>
+                        <input type="text" name="Email" placeholder="Email" style="height: 25px; width: 200px"> <br>
+                        <input type="text" name="Phone" placeholder="Phone" style="height: 25px; width: 200px"> <br>
+                        <select name="Category" style="height: 25px; width: 200px">
+                            <option value="Green">Green</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Red">Red</option>
+                        </select><br>
+                        <input type="text" name="Group" placeholder="Group name" style="height: 25px; width: 200px"> <br>
+                        <input type="submit" name="SUBMIT" value="submit" style="height: 25px; width: 200px">
+                    </form>          
+                </div>
+                <div class="col-sm-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Full name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Category</th>
+                                <th>Group name</th>
+                                <th>Delete student</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTable">
+                        </tbody>
+                    </table>
+                </div></div></div>
+        <link href="CSS.css" rel="stylesheet" type="text/css"/>
+            </body>
+            </html>
